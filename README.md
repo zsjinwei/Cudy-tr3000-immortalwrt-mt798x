@@ -1,5 +1,5 @@
 使用说明：
-Uboot:cudy tr3000 v1中文三分区DHCP uboot第二版(https://www.right.com.cn/forum/thread-8415351-1-1.html)
+Uboot:[cudy tr3000 v1中文三分区DHCP uboot第二版](https://www.right.com.cn/forum/thread-8415351-1-1.html)
 使用mod-112m刷入即可
 **English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
