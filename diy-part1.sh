@@ -21,6 +21,8 @@ PKG_PATH="$GITHUB_WORKSPACE/wrt/package/"
 
 #预置HomeProxy数据
 if [ -d *"homeproxy"* ]; then
+	echo " "
+
 	HP_RULE="surge"
 	HP_PATH="homeproxy/root/etc/homeproxy"
 
