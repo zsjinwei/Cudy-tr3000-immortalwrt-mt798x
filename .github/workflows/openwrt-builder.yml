@@ -25,6 +25,7 @@ env:
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
+  PROFILE_FILE: mt7981.mk
   DTS_FILE: mt7981b-cudy-tr3000-v1-256mb.dts
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
@@ -78,6 +79,7 @@ jobs:
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         [ -e $DTS_FILE ] && mv $DTS_FILE openwrt/target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/$DTS_FILE
+        [ -e $PROFILE_FILE ] && mv $PROFILE_FILE openwrt/target/linux/mediatek/image/$PROFILE_FILE
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
