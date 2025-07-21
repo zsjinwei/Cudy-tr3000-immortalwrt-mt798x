@@ -98,7 +98,7 @@
 
 			partition@580000 {
  				label = "ubi";
- 				reg = <0x5C0000 0x7000000>;
+ 				reg = <0x5C0000 0xe600000>;
 			};
 		};
 	};
@@ -209,8 +209,4 @@
 	phys = <&u2port0 PHY_TYPE_USB2>,
 		   <&u3port0 PHY_TYPE_USB3>;
 	status = "okay";
-};
-
-&ubi {
-	reg = <0x5c0000 0xe600000>;
 };
